@@ -24,40 +24,39 @@
 
 <body class="login">
 <div>
-    <a class="hiddenanchor" id="signup"></a>
-    <a class="hiddenanchor" id="signin"></a>
-
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
                 {{ Form::open(['route' => 'login']) }}
                 <h1>Login Form</h1>
+
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <div>
-                    <input type="text" class="form-control" name="email" placeholder="Email-address" required=""/>
-                    @if ($errors->has('email'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('email') }}</strong>
-                        </span>
-                    @endif
+                    <input type="text" class="form-control" name="email" placeholder="{{ trans('users.attributes.email') }}"/>
                 </div>
                 <div>
-                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-                    @if ($errors->has('password'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('password') }}</strong>
-                        </span>
-                    @endif
+                    <input type="password" class="form-control" name="password" placeholder="{{ trans('users.attributes.password') }}"/>
                 </div>
                 <div>
-                    {{ Form::submit('Log in', ['class' => 'btn btn-default submit']) }}
-                    <a class="reset_pass" href="{{ route('password.request') }}">Lost your password?</a>
+                    {{ Form::submit(trans('global.login'), ['class' => 'btn btn-default submit']) }}
+                    <a class="reset_pass" href="{{ route('password.request') }}">{{ trans('global.password.action') }}</a>
                 </div>
 
                 <div class="clearfix"></div>
 
                 <div class="separator">
-                    <p class="change_link">New to site?
-                        <a href="#signup" class="to_register"> Create Account </a>
+                    <p class="change_link">
+                        <a href="{{ route('register') }}" class="to_register"> {{ trans('global.register') }} </a>
                     </p>
 
                     <div class="clearfix"></div>
@@ -69,43 +68,6 @@
                     </div>
                 </div>
                 {{ Form::close() }}
-            </section>
-        </div>
-
-        <div id="register" class="animate form registration_form">
-            <section class="login_content">
-                <form>
-                    <h1>Create Account</h1>
-                    <div>
-                        <input type="text" class="form-control" placeholder="Username" required=""/>
-                    </div>
-                    <div>
-                        <input type="email" class="form-control" placeholder="Email" required=""/>
-                    </div>
-                    <div>
-                        <input type="password" class="form-control" placeholder="Password" required=""/>
-                    </div>
-                    <div>
-                        <a class="btn btn-default submit" href="index.html">Submit</a>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="separator">
-                        <p class="change_link">Already a member ?
-                            <a href="#signin" class="to_register"> Log in </a>
-                        </p>
-
-                        <div class="clearfix"></div>
-                        <br/>
-
-                        <div>
-                            <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                            <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and
-                                Terms</p>
-                        </div>
-                    </div>
-                </form>
             </section>
         </div>
     </div>
