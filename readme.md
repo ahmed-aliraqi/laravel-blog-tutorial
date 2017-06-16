@@ -1,7 +1,8 @@
 # Installation
 
-- [Installation](#installation)
+- [Installing Laravel](#installation)
 - [Packages](#packages)
+- [Dashboard Template](#dashboard-template)
 
 <a name="installation"></a>
 ### Installing Laravel
@@ -34,7 +35,7 @@ Alternatively, you may also install Laravel by issuing the Composer `create-proj
 - [Eloquent Media](https://github.com/ahmed-aliraqi/eloquent-media)
 
 <a name="dashboard-template"></a>
-### Dashboard template
+### Dashboard Template
 - [Gentelella](https://github.com/puikinsh/gentelella)
 - [Gentelella (demo)](https://colorlib.com/polygon/gentelella/index.html)
 
