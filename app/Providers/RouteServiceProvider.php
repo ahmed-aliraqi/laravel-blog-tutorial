@@ -17,6 +17,15 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
+     * This namespace is applied to your dashboard controller routes.
+     *
+     * In addition, it is set as the URL generator's root namespace.
+     *
+     * @var string
+     */
+    protected $dashboardNamespace = 'App\Http\Controllers\Dashboard';
+
+    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
@@ -39,6 +48,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapDashboardRoutes();
+
         //
     }
 
@@ -54,6 +65,22 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/web.php'));
+    }
+
+    /**
+     * Define the "dashboard" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapDashboardRoutes()
+    {
+        Route::middleware(['web', 'auth'])
+             ->namespace($this->dashboardNamespace)
+             ->prefix(config('app.cpanel'))
+             ->as('dashboard.')
+             ->group(base_path('routes/dashboard.php'));
     }
 
     /**

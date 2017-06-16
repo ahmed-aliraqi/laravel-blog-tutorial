@@ -41,7 +41,7 @@ class LoginController extends Controller
     /**
      * Validate the user login request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return void
      */
     protected function validateLogin(Request $request)
@@ -50,5 +50,12 @@ class LoginController extends Controller
             $this->username() => 'required|string',
             'password' => 'required|string',
         ], [], trans('users.attributes'));
+    }
+
+    protected function authenticated(Request $request, $user)
+    {
+        if ($user->is_admin) {
+        return redirect()->route('dashboard.home');
+        }
     }
 }

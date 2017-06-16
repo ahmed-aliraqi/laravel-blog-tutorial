@@ -10,16 +10,16 @@
     <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
-    <link href="{{ url('dashboard') }}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="{{ url('dashboard') }}/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="{{ url('dashboard') }}/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="{{ url('dashboard') }}/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/animate.css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="{{ url('dashboard')}}/css/ltr/app.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset')}}/css/ltr/app.css" rel="stylesheet">
 </head>
 
 <body class="login">

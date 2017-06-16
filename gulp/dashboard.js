@@ -21,37 +21,37 @@ direction.forEach(function (dir) {
     mix[sass]([
         '../dashboard/src/scss/custom.scss',
         '../dashboard/src/scss/daterangepicker.scss'
-    ], 'public/dashboard/css/' + dir + '/app.css');
+    ], 'public/dashboard-asset/css/' + dir + '/app.css');
 })
 
 
 mix.scripts([
     '../dashboard/src/js/helpers/smartresize.js',
     '../dashboard/src/js/custom.js'
-], 'public/dashboard/js/app.js');
+], 'public/dashboard-asset/js/app.js');
 
 
 /**
  * Convert vendors plugins files to public
  */
-mix.copy('resources/assets/dashboard/vendors/jquery', 'public/dashboard/vendors/jquery');
-mix.copy('resources/assets/dashboard/vendors/bootstrap', 'public/dashboard/vendors/bootstrap');
-mix.copy('resources/assets/dashboard/vendors/font-awesome', 'public/dashboard/vendors/font-awesome');
-mix.copy('resources/assets/dashboard/vendors/nprogress', 'public/dashboard/vendors/nprogress');
-mix.copy('resources/assets/dashboard/vendors/iCheck', 'public/dashboard/vendors/iCheck');
-mix.copy('resources/assets/dashboard/vendors/fastclick', 'public/dashboard/vendors/fastclick');
-mix.copy('resources/assets/dashboard/vendors/animate.css', 'public/dashboard/vendors/animate.css');
+mix.copy('resources/assets/dashboard/vendors/jquery', 'public/dashboard-asset/vendors/jquery');
+mix.copy('resources/assets/dashboard/vendors/bootstrap', 'public/dashboard-asset/vendors/bootstrap');
+mix.copy('resources/assets/dashboard/vendors/font-awesome', 'public/dashboard-asset/vendors/font-awesome');
+mix.copy('resources/assets/dashboard/vendors/nprogress', 'public/dashboard-asset/vendors/nprogress');
+mix.copy('resources/assets/dashboard/vendors/iCheck', 'public/dashboard-asset/vendors/iCheck');
+mix.copy('resources/assets/dashboard/vendors/fastclick', 'public/dashboard-asset/vendors/fastclick');
+mix.copy('resources/assets/dashboard/vendors/animate.css', 'public/dashboard-asset/vendors/animate.css');
 
 // Copy images files to public.
-mix.copy('resources/assets/dashboard/production/images', 'public/dashboard/images/');
+mix.copy('resources/assets/dashboard/production/images', 'public/dashboard-asset/images/');
 
 /**
  * Convert vendors plugins to rtl.
  */
-mix.rtl('public/dashboard/vendors/bootstrap/dist/**/*.css',
-    'public/dashboard/vendors/rtl/bootstrap/dist');
+mix.rtl('public/dashboard-asset/vendors/bootstrap/dist/**/*.css',
+    'public/dashboard-asset/vendors/rtl/bootstrap/dist');
 
-mix.copy('resources/assets/dashboard/vendors/bootstrap/dist/fonts', 'public/dashboard/vendors/rtl/bootstrap/dist/fonts');
+mix.copy('resources/assets/dashboard/vendors/bootstrap/dist/fonts', 'public/dashboard-asset/vendors/rtl/bootstrap/dist/fonts');
 
 
 

@@ -10,16 +10,16 @@
     <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
-    <link href="{{ url('dashboard') }}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="{{ url('dashboard') }}/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="{{ url('dashboard') }}/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="{{ url('dashboard') }}/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="{{ url('dashboard') }}/css/ltr/app.css" rel="stylesheet">
+    <link href="{{ url('dashboard-asset') }}/css/ltr/app.css" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -36,7 +36,7 @@
                 <!-- menu profile quick info -->
                 <div class="profile clearfix">
                     <div class="profile_pic">
-                        <img src="{{ url('dashboard') }}/images/img.jpg" alt="..." class="img-circle profile_img">
+                        <img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span>Welcome,</span>
@@ -181,7 +181,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ url('dashboard') }}/images/img.jpg" alt="">John Doe
+                                <img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="">John Doe
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -205,7 +205,7 @@
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <li>
                                     <a>
-                                        <span class="image"><img src="{{ url('dashboard') }}/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -217,7 +217,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="{{ url('dashboard') }}/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -229,7 +229,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="{{ url('dashboard') }}/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -241,7 +241,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="{{ url('dashboard') }}/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="{{ url('dashboard-asset') }}/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -734,17 +734,17 @@
 </div>
 
 <!-- jQuery -->
-<script src="{{ url('dashboard') }}/vendors/jquery/dist/jquery.min.js"></script>
+<script src="{{ url('dashboard-asset') }}/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="{{ url('dashboard') }}/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ url('dashboard-asset') }}/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="{{ url('dashboard') }}/vendors/fastclick/lib/fastclick.js"></script>
+<script src="{{ url('dashboard-asset') }}/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="{{ url('dashboard') }}/vendors/nprogress/nprogress.js"></script>
+<script src="{{ url('dashboard-asset') }}/vendors/nprogress/nprogress.js"></script>
 <!-- iCheck -->
-<script src="{{ url('dashboard') }}/vendors/iCheck/icheck.min.js"></script>
+<script src="{{ url('dashboard-asset') }}/vendors/iCheck/icheck.min.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="{{ url('dashboard') }}/js/app.js"></script>
+<script src="{{ url('dashboard-asset') }}/js/app.js"></script>
 </body>
 </html>
