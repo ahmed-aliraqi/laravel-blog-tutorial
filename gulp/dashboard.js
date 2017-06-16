@@ -40,6 +40,7 @@ mix.copy('resources/assets/dashboard/vendors/font-awesome', 'public/dashboard/ve
 mix.copy('resources/assets/dashboard/vendors/nprogress', 'public/dashboard/vendors/nprogress');
 mix.copy('resources/assets/dashboard/vendors/iCheck', 'public/dashboard/vendors/iCheck');
 mix.copy('resources/assets/dashboard/vendors/fastclick', 'public/dashboard/vendors/fastclick');
+mix.copy('resources/assets/dashboard/vendors/animate.css', 'public/dashboard/vendors/animate.css');
 
 // Copy images files to public.
 mix.copy('resources/assets/dashboard/production/images', 'public/dashboard/images/');
