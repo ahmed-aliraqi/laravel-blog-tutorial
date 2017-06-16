@@ -1,41 +1,8 @@
-# Installation
 
-- [Installing Laravel](#installation)
-- [Packages](#packages)
-- [Dashboard Template](#dashboard-template)
+### Laravel ide helper package
 
-<a name="installation"></a>
-### Installing Laravel
+This package generates a file that your IDE understands, so it can provide accurate autocompletion. Generation is done based on the files in your project, so they are always up-to-date. If you don't want to generate it, you can add a pre-generated file to the root folder of your Laravel project (but this isn't as up-to-date as self generated files).
 
-Laravel utilizes [Composer](https://getcomposer.org) to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
 
-#### Via Laravel Installer
-
-First, download the Laravel installer using Composer:
-
-    composer global require "laravel/installer"
-
-Make sure to place the `$HOME/.composer/vendor/bin` directory (or the equivalent directory for your OS) in your $PATH so the `laravel` executable can be located by your system.
-
-Once installed, the `laravel new` command will create a fresh Laravel installation in the directory you specify. For instance, `laravel new blog` will create a directory named `blog` containing a fresh Laravel installation with all of Laravel's dependencies already installed:
-
-    laravel new blog
-
-#### Via Composer Create-Project
-
-Alternatively, you may also install Laravel by issuing the Composer `create-project` command in your terminal:
-
-    composer create-project --prefer-dist laravel/laravel blog
-
-<a name="packages"></a>
-### Packages
-
-- [Laravel Collective (Forms & HTML)](https://laravelcollective.com/docs/5.4/html)
-- [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
-- [Eloquent Media](https://github.com/ahmed-aliraqi/eloquent-media)
-
-<a name="dashboard-template"></a>
-### Dashboard Template
-- [Gentelella](https://github.com/puikinsh/gentelella)
-- [Gentelella (demo)](https://colorlib.com/polygon/gentelella/index.html)
+- [Install laravel ide helper](https://github.com/barryvdh/laravel-ide-helper)
 
